@@ -15,6 +15,8 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+#This line is for locate the templates directory
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 # print(BASE_DIR)
 # print(TEMPLATE_DIR)
@@ -41,11 +43,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "machine_learning",
-    "home",
     "tailwind",
     'theme',
-    "django_browser_reload"
+    "django_browser_reload",
+    "machine_learning",
+    "home",
+    "about_us",
 ]
 
 TAILWIND_APP_NAME = 'theme'

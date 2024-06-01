@@ -3,5 +3,9 @@ from . import views
 
 urlpatterns =[
 
-    path("ml/", views.machineLearning),
+    path("", views.machineLearning),
+    path("description/", views.mlDescription),
+    path("random/", views.random),
+    path("kn/", views.kNearest),
+    path("d-tree/", views.dTree),
 ]
