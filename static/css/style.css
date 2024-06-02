@@ -1,0 +1,16 @@
+body{
+    background-color: aqua;
+}
+    
+p{
+    color: azure;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 100px;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
