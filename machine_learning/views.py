@@ -20,4 +20,6 @@ def kNearest(request):
     return render(request, "ml/kn.html")
 
 def dTree(request):
-    return render(request, "ml/dtree.html")
+    count = 23
+    title = "Decission Tree"
+    return render(request, "ml/dtree.html", context={'c':count, "title": title})
