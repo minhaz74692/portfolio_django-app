@@ -36,7 +36,7 @@ SECRET_KEY = "django-insecure-)e(qidx4+aum5*p3_ano$0xh$c)+o%d=s-c^s4whr2cqgbz1w2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     "machine_learning",
     "home",
     "about_us",
+    "portfolio",
 ]
 
 TAILWIND_APP_NAME = 'theme'

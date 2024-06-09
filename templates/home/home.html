@@ -1,4 +1,9 @@
-{% load static tailwind_tags %}
+{% extends 'common/base.html'%}
+
+{% block title %} {{title}} {% endblock title %}
+{% block description %} This is {{title}} page{% endblock description %}
+
+<!-- {% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +16,7 @@
 </head>
 
 <body>
-    <p>This is home page template</p>
+    <p>This is home page template1234</p>
     <img src="{% static 'images/example.avif' %}" alt="example"/>
     <table border="1">
         <tr>
@@ -31,4 +36,4 @@
         </tr>
     </table>
 </body>
-</html>
+</html> -->

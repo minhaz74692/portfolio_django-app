@@ -8,4 +8,5 @@ urlpatterns =[
     path("random/", views.random),
     path("kn/", views.kNearest),
     path("d-tree/", views.dTree),
+    path("learning/", views.learning),
 ]

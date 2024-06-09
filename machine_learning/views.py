@@ -8,18 +8,23 @@ def machineLearning(request):
     for i in range (1, 100):
         count+=i
     offering = {"count": count, "title":"Machine Learning", "developer":"Minhazul Islam", "nameList": ["Minhaz", "Monir", "Kamrul", "Mainul"]}
-    return render(request, "ml/ml.html", context = offering)
+    return render(request, "machine_learning/ml.html", context = offering)
 
 def mlDescription(request):
-    return render(request, "ml/description.html")
+    title = "Description"
+    return render(request, "machine_learning/description.html", context={"title": title,})
 
 def random(request):
-    return render(request, "ml/random.html")
+    return render(request, "machine_learning/random.html")
 
 def kNearest(request):
-    return render(request, "ml/kn.html")
+    return render(request, "machine_learning/kn.html")
 
 def dTree(request):
     count = 23
     title = "Decission Tree"
-    return render(request, "ml/dtree.html", context={'c':count, "title": title})
+    return render(request, "machine_learning/dtree.html", context={'c':count, "title": title})
+
+def learning(request):
+    title = "Learning"
+    return render(request, "machine_learning/learning.html", context={"title": title})
