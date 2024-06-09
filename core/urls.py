@@ -22,7 +22,7 @@ urlpatterns = [
     path("__reload__/", include("django_browser_reload.urls")),
 
     path("", include("home.urls")),
-    path("machine-learning/", include("machine_learning.urls")),
     path("about/", include("about_us.urls")),
     path("portfolio/", include("portfolio.urls")),
+    path("projects/", include("projects.urls"))
 ]

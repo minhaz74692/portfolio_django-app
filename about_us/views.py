@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def aboutUs(request):
-    return render(request, "about/about.html")
+    title = "ABOUT"
+    return render(request, "about/about.html", context={"title" : title.capitalize()})
     
     
