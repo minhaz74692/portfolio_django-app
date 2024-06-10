@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"">MIE Lab</a>
+            <a class="navbar-brand" href="{% url 'home' %}">MIE Lab</a>
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -25,22 +25,22 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/portfolio/">Portfolio</a>
+                            <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/projects/" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="{% url 'projects' %}" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/projects/">Flutter</a></li>
-                                <li><a class="dropdown-item" href="/projects/">Django</a></li>
-                                <li><a class="dropdown-item" href="/projects/">Data Science</a></li>
-                                <li><a class="dropdown-item" href="/projects/">AutoCAD</a></li>
+                                <li><a class="dropdown-item" href="{% url 'flutter' %}">Flutter</a></li>
+                                <li><a class="dropdown-item" href="{% url 'projects' %}">Django</a></li>
+                                <li><a class="dropdown-item" href="{% url 'projects' %}">Data Science</a></li>
+                                <li><a class="dropdown-item" href="{% url 'projects' %}">AutoCAD</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about/">Contact</a>
+                            <a class="nav-link" href="{% url 'about' %}">Contact</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
