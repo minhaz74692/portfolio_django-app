@@ -1,0 +1,36 @@
+{% extends 'common/base.html' %}
+{% block title %} {{title}} {% endblock title %}
+{% block content %}
+<p class="text-center fs-1">Hello this is {{title}} page</p>
+
+
+    {% if users %}
+    <p class="text-primary text-center fs-3 fw-bold">Users: {{users}}</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">USERID</th>
+                <th scope="col">USERNAME</th>
+                <th scope="col">AGE</th>
+                <th scope="col">PROFESSION</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <th scope="row">{{user.userId}}</th>
+                <td>{{user.userName}}</td>
+                <td>{{user.age}}</td>
+                <td>{{user.profession}}</td>
+            </tr>
+            {% endfor %}
+            
+    
+        </tbody>
+    </table>
+    {% else %}
+    No User Avaliable
+    {% endif %}
+
+
+{% endblock content %}

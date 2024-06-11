@@ -2,4 +2,13 @@
 {% block title %} {{title}} {% endblock title %}
 {% block content %}
 <h1>Hello this is {{title}} page</h1>
+<script>
+    function navigate(url) {
+        window.location.href = url;
+    }
+    var url = "{% url 'users' %}";
+   
+</script>
+<button type="button" class="btn btn-outline-primary justify-content-center" onclick="navigate(url)">See Users</button>
+
 {% endblock content %}
