@@ -11,9 +11,12 @@ def userRegistration(request):
     title = "Sign Up"
     if request.method == "POST":
         regForm = RegistrationForms(request.POST)
-        print(regForm)
-        print("This is post statement")
-        print(regForm.cleaned_data)
+        # print(regForm)
+        if regForm.is_valid():
+            print("This is post statement")
+            print(regForm.cleaned_data['password'])
+            print(regForm.cleaned_data['repassword'])
+
     else:
         regForm = RegistrationForms()
         print("this is get statement")

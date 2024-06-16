@@ -1,0 +1,11 @@
+form{
+    border: 2px solid grey;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}

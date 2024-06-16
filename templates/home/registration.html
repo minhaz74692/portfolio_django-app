@@ -1,9 +1,22 @@
 {% extends 'common/base.html'%}
+{% load static %}
 
+
+<!-- This is the tag for page title -->
 {% block title %} {{title}} {% endblock title %}
+
+
+<!-- This is the tag for description -->
 {% block description %} This is {{title}} page{% endblock description %}
+
+<!-- This is the tag for css -->
+{% block cssData %}
+<link href="{% static 'css/form.css' %}" rel="stylesheet"> {% endblock cssData %}
+
+
+<!-- This is the tag for Page Content -->
 {% block content %}
-<form class="px-5" method="POST" novalidate>
+<form class="px-5 " method="POST" novalidate>
     <!-- {% for field in forms%}
     {{field.label_tag}}
     {% endfor %} -->
