@@ -7,8 +7,11 @@
         window.location.href = url;
     }
     var url = "{% url 'users' %}";
+    var classView = "{% url 'classView' %}";
    
 </script>
 <button type="button" class="btn btn-outline-primary justify-content-center" onclick="navigate(url)">See Users</button>
+
+<button type="button" class="btn btn-outline-primary justify-content-center" onclick="navigate(classView)">Class Based View</button>
 
 {% endblock content %}

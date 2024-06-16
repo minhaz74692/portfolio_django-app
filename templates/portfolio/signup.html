@@ -1,0 +1,15 @@
+{% extends 'common/base.html' %}
+
+{% block title %} {{title}}{% endblock title%}
+{% block description %} {{title}} Screen {% endblock description%}
+
+{% block content %} 
+<form action="" method="POST">
+    {%csrf_token%} 
+    {% for fm in form%}
+    {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor%}
+    <input type="submit" value="submit">
+</form>
+{% endblock content%}
+
